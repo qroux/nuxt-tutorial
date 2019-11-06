@@ -1,8 +1,19 @@
 <template>
   <div>
+    <MyNavbar />
     <nuxt />
   </div>
 </template>
+
+<script>
+import MyNavbar from './MyNavbar.vue'
+
+export default {
+  components: {
+    MyNavbar
+  }
+}
+</script>
 
 <style>
 html {
@@ -17,6 +28,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  color: #35495e;
+}
+
 *,
 *:before,
 *:after {
@@ -29,7 +44,7 @@ html {
   border-radius: 4px;
   border: 1px solid #3b8070;
   color: #3b8070;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px 30px;
 }
 
@@ -43,7 +58,7 @@ html {
   border-radius: 4px;
   border: 1px solid #35495e;
   color: #35495e;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 10px 30px;
   margin-left: 15px;
 }

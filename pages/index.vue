@@ -3,27 +3,72 @@
     <div>
       <logo />
       <h1 class="title">
-        nuxt-tutorial
+        Juriste Codeur
       </h1>
       <h2 class="subtitle">
-        My sensational Nuxt.js project
+        Apprendre à coder des SmartContracts
+        <br>
+        Faire des applications décentralisées
       </h2>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://www.youtube.com/watch?v=ipwxYa-F1uY"
           target="_blank"
           class="button--green"
         >
-          Documentation
+          Découverte
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="https://www.udemy.com/course/ethereum-and-solidity-the-complete-developers-guide/"
           target="_blank"
           class="button--grey"
         >
-          GitHub
+          Cours Complet
         </a>
       </div>
+    </div>
+    <div class="my-5 d-flex flex-row flex-wrap justify-content-center">
+      <!-- first card -->
+      <div class="m-1">
+        <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+          <b-row no-gutters>
+            <b-col md="6" class="d-flex align-items-center">
+              <b-card-img src="https://blog.webnet.fr/wp-content/uploads/2019/02/hands-2088954_1920.jpg" class="rounded-0"></b-card-img>
+            </b-col>
+            <b-col md="6">
+              <b-card-body title="Juridique">
+                <b-card-text class="text-left">
+                  Comprendre les intérêts de la Blockchain pour imaginer de nouvelles des applications concrètes.
+                  <br>
+                  <br>
+                  Se mettre en conformité avec les exigences réglementaires.
+                </b-card-text>
+              </b-card-body>
+            </b-col>
+          </b-row>
+        </b-card>
+      </div>
+      <!-- second card -->
+      <div class="m-1">
+        <b-card no-body class="overflow-hidden" style="max-width: 540px;">
+          <b-row no-gutters>
+            <b-col md="6" class="d-flex align-items-center">
+              <b-card-img src="https://i.udemycdn.com/course/750x422/1906462_5d20.jpg" class="rounded-0"></b-card-img>
+            </b-col>
+            <b-col md="6">
+              <b-card-body title="Technique">
+                <b-card-text class="text-left">
+                  Coder son propre Smart Contract en langage Solidity.
+                  <br>
+                  <br>
+                  Créer une véritable application décentralisée pour intéragir avec la blockchain depuis un navigateur.
+                </b-card-text>
+              </b-card-body>
+            </b-col>
+          </b-row>
+        </b-card>
+      </div>
+      <!-- end cards -->
     </div>
   </div>
 </template>
@@ -41,11 +86,13 @@ export default {
 <style>
 .container {
   margin: 0 auto;
+  padding-top: 0;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-direction: column;
 }
 
 .title {
