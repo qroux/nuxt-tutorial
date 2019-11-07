@@ -6,6 +6,8 @@
         Juriste Codeur
       </h1>
       <h2 class="subtitle">
+        S'informer sur l'évolution de l'eccosystème Ethereum
+        <br>
         Apprendre à coder des SmartContracts
         <br>
         Faire des applications décentralisées
@@ -33,7 +35,7 @@
         <b-card no-body class="overflow-hidden" style="max-width: 540px;">
           <b-row no-gutters>
             <b-col md="6" class="d-flex align-items-center">
-              <b-card-img src="https://blog.webnet.fr/wp-content/uploads/2019/02/hands-2088954_1920.jpg" class="rounded-0"></b-card-img>
+              <b-card-img src="https://blog.webnet.fr/wp-content/uploads/2019/02/hands-2088954_1920.jpg" class="rounded-0" />
             </b-col>
             <b-col md="6">
               <b-card-body title="Juridique">
@@ -53,7 +55,7 @@
         <b-card no-body class="overflow-hidden" style="max-width: 540px;">
           <b-row no-gutters>
             <b-col md="6" class="d-flex align-items-center">
-              <b-card-img src="https://i.udemycdn.com/course/750x422/1906462_5d20.jpg" class="rounded-0"></b-card-img>
+              <b-card-img src="https://i.udemycdn.com/course/750x422/1906462_5d20.jpg" class="rounded-0" />
             </b-col>
             <b-col md="6">
               <b-card-body title="Technique">
@@ -87,7 +89,7 @@ export default {
 .container {
   margin: 0 auto;
   padding-top: 0;
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   justify-content: center;
   align-items: center;
