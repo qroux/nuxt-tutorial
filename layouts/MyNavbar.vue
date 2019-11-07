@@ -40,10 +40,10 @@ export default {
     EthPrice () {
       return this.$store.state.Eth.price
     }
+  },
+  created () {
+    this.$store.dispatch('Eth/fetchCMC')
   }
-  // created () {
-  //   this.$store.dispatch('Eth/fetchCMC')
-  // }
 }
 </script>
 
