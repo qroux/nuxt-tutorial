@@ -43,13 +43,24 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    credntials: true,
+    proxy: true
+  },
+  proxy: {
+    '/api/': {
+      target: 'https://pro-api.coinmarketcap.com/v1/',
+      pathRewrite: {
+        '^/api/' : ''
+        }
+      }
   },
   /*
   ** Build configuration
